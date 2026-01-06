@@ -16,9 +16,7 @@
   color: blue;
 }
 
-.banner picture {
-  position: absolute;
-  z-index: -1;
+.banner picture {  
   inset: 0;
   object-fit: cover;
   box-sizing: border-box;
