@@ -15,7 +15,6 @@ export default function decorate(block) {
   ul.querySelectorAll('picture > img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
 
 
-  // Apply placeholder CTA text to CTA elements inside each card body
   ul.querySelectorAll(
     // Add/adjust selectors to match your DOM
     '.cards-card-body .card-cta a, ' +
@@ -23,7 +22,6 @@ export default function decorate(block) {
     '.cards-card-body button.cta, ' +
     '.cards-card-body .cta a'
   ).forEach((ctaEl) => {
-    // Visible text
     ctaEl.textContent = CTA_TEXT;
 
     // Accessible label: pair with card title if present
