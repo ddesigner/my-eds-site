@@ -1,0 +1,96 @@
+.writer .writer-container>ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 25px;
+}
+
+
+.writer .writer-container>ul>li {
+  text-align: center;
+}
+
+.writer .writer-container>ul>li .avatar-img {
+  height: auto;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  width: 100%;
+}
+
+.writer .writer-container>ul>li .avatar-img img {
+  border-radius: 50%;
+  height: 164px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 164px;
+}
+
+
+.writer .writer-container>ul>li .writer-details {
+  align-items: center;
+  margin: 0;
+}
+
+.writer .writer-container>ul>li .writer-details h3 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.writer .writer-container>ul>li .writer-details:nth-child(3) {
+  text-transform: uppercase;
+}
+
+.writer .writer-container>ul>li .writer-details:nth-child(3) h3 {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+
+.writer .social-wrap {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.writer .social-link {
+  display: inline-flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: #000;
+  transition: transform 0.15s ease, background 0.2s ease;
+}
+
+
+.writer .icon {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.writer .facebook-icon {
+  background-color: #ccc;
+  -webkit-mask: url('../../icons/facebook.svg') no-repeat center / contain;
+  mask: url('../../icons/facebook.svg') no-repeat center / contain;
+
+}
+
+.writer .twitter-icon {
+  background-color: #ccc;
+  -webkit-mask: url('../../icons/twitter.svg') no-repeat center / contain;
+  mask: url('../../icons/twitter.svg') no-repeat center / contain;
+}
+
+.writer .instagram-icon {
+  background-color: #ccc;
+  -webkit-mask: url('../../icons/instagram.svg') no-repeat center / contain;
+  mask: url('../../icons/instagram.svg') no-repeat center / contain;
+}
