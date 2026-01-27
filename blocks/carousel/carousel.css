@@ -72,8 +72,8 @@
 }
 
 .carousel .carousel-slide-indicator button {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   margin: 0;
   padding: 0;
   border-radius: 50%;
@@ -171,7 +171,7 @@
   width: 100%;
 }
 
-.carousel-slides h2 {
+.carousel-slide-content h2 {
   font-size: 28px;
   padding: 0;
   margin: 0;
