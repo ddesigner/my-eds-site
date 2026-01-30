@@ -67,9 +67,21 @@ export default async function decorate(block) {
             const description = typeof article.description === 'string' ? article.description : '';
             const title = typeof article.title === 'string' ? article.title : '';
 
+            //create link
+            const link = article.title !== '' ? 'magazine/' + article.title.toLowerCase().replaceAll(' ', '-') : '';
+            const href = document.createElement('a');
+            href.setAttribute('href', link);
+            href.setAttribute('title', title)
+
             li.appendChild(row(title, "title"));
             li.appendChild(row(description, "description"));
 
+
+            // Now wrap all current children of <li> with <a>
+            while (li.firstChild) {
+                href.appendChild(li.firstChild);
+            }
+            li.appendChild(href);
             frag.appendChild(li);
         });
 
