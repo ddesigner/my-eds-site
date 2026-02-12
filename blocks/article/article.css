@@ -43,9 +43,13 @@
 }
 
 .article-container h3::after {
-  border-bottom: 2px solid var(--brandPrimary, #ffea00);
+  border-bottom: 2px solid var(--button-color);
   content: "";
   display: block;
   padding-top: 8px;
   width: 84px;
+}
+
+.article-container a {
+  color: black;
 }

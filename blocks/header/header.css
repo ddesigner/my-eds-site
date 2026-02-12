@@ -90,7 +90,7 @@ header nav a.button:any-link {
 }
 
 header nav a.button.active {
-  background-color: #ffea00;
+  background-color: var(--button-color);
 }
 
 header span.icon.icon-search {

@@ -18,6 +18,8 @@
   --text-color: #131313;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
+  --button-color: #ffea00;
+  --button-hover-color: #ffef3a;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -197,7 +199,7 @@ button {
   line-height: 1.5;
   text-align: center;
   text-decoration: none;
-  background-color: #ffea00;
+  background-color: var(--button-color);
   color: #000;
   cursor: pointer;
   overflow: hidden;
@@ -210,7 +212,7 @@ a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: #e4d103;
+  background-color: var(--button-hover-color);
   cursor: pointer;
 }
 
@@ -280,8 +282,9 @@ main .section.highlight {
 
 #our-contributors::after,
 #all-articles::after,
-#faqs::after {
-  border-bottom: 2px solid var(--brandPrimary, #ffea00);
+#faqs::after,
+#adventures::after {
+  border-bottom: 2px solid var(--button-color);
   content: "";
   display: block;
   padding-top: 8px;
