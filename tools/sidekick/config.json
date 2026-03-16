@@ -11,6 +11,12 @@
         "**.docx"
       ],
       "isPalette": true
+    },
+    {
+      "id":"library",
+      "environments":["edit"],
+      "url":"/tools/sidekick/library.html",
+      "includePaths": ["**.docx**"]
     }
   ]
 }
