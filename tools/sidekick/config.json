@@ -1,0 +1,16 @@
+{ 
+  "plugins": [
+    {
+      "id": "asset-library",
+      "title": "AEM Assets",
+      "environments": ["edit", "dev"],
+      "url": "https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/franklin/asset-selector.html",
+      "passConfig": true,
+      "passReferrer": true,
+      "includePaths": [
+        "**.docx"
+      ],
+      "isPalette": true
+    }
+  ]
+}
